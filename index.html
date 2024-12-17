@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AttireAura - Clothing Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to AttireAura</h1>
+        <nav>
+            <button onclick="showProducts()">View Products</button>
+            <button onclick="showCart()">View Cart</button>
+            <button onclick="checkout()">Checkout</button>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section id="products-section" class="hidden">
+            <h2>Available Products</h2>
+            <div id="product-list"></div>
+        </section>
+
+        <section id="cart-section" class="hidden">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div id="total-amount"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AttireAura</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
